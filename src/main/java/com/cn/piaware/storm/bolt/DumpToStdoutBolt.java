@@ -8,17 +8,17 @@ import backtype.storm.tuple.Tuple;
 import backtype.storm.tuple.Values;
 
 /**
- * simply pass through data -- a tuple with a single value
+ * Print input to stdout
  */
-public class PassThruBolt extends BaseBasicBolt {
+public class DumpToStdoutBolt extends BaseBasicBolt {
     @Override
     public void declareOutputFields(OutputFieldsDeclarer declarer) {
-        declarer.declare(new Fields("pt-data-out"));
+        // no output
     }
 
     @Override
     public void execute(Tuple tuple, BasicOutputCollector outputCollector) {
-        String inData = tuple.getStringByField("ott-data-out");
-        outputCollector.emit(new Values(inData));
+        String inData = tuple.getStringByField("pt-data-out");
+        System.out.println(">>>" + inData + "<<<");
     }
 }
