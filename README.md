@@ -10,6 +10,8 @@ This is a minimalist topology that can be used as a starting point to build a mo
 topology.
 
 ```
+ SimpleStormTopology.java
+ 
  +----------+----------+ 
  |                     |
  |    OneToTenSpout    | id = "one-to-ten"
@@ -36,6 +38,23 @@ topology.
  
 ```
 
+### PiAware Topology
+```
+ PiAwareTopology.java
+ 
+ +----------+----------+ 
+ |                     |
+ |  PiAwareDataSpout   | id = "piaware-data"
+ |                     |
+ +----------+----------+ 
+            |
+            | ("piaware-data-out")
+            |
+            v
+ +----------+----------+ 
+ |                     |
+ | PiAwareJsonParser   | id = "piaware-json-parser"
+ |                     |
+ +----------+----------+ 
 
-
-
+```
