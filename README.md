@@ -48,7 +48,7 @@ topology.
  |                     |
  +----------+----------+ 
             |
-            | ("piaware-data-out")
+            | ("piaware-json-data")
             |
             v
  +----------+----------+ 
@@ -56,5 +56,9 @@ topology.
  | PiAwareJsonParser   | id = "piaware-json-parser"
  |                     |
  +----------+----------+ 
+            |
+            | ("time", "flight-data")
+            |
+            v
 
 ```

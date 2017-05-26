@@ -25,15 +25,17 @@ public class CnProperties {
          * 1. print properties in alphbetical order
          */
         Properties props = System.getProperties();
-        Enumeration<String> ek = props.keys();
+        //Enumeration<String> ek = props.keys();
         //Collections.sort(ek);
 
+        /*
         while (ek.hasMoreElements()) {
             //String key = ek.nextElement().toString();
             String key = ek.nextElement();
             String val = props.get(key).toString();
             System.out.println(key + "=" + val);
         }
+        */
 
         //List<Object> ll = new ArrayList(ek);
 
