@@ -2,7 +2,7 @@
 
 An Apache Storm topology to process real-time aircraft
 data received from a
-[PiWare](http://flightaware.com/adsb/piaware)
+[PiAware](http://flightaware.com/adsb/piaware)
 device.
 
 ### Simple Topology
