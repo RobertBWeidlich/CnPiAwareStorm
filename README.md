@@ -37,6 +37,11 @@ topology.
  +----------+----------+ 
  
 ```
+To run the SimpleStormTopology topology from the Linux command line:
+```
+  $ cd .../CnPiAwareStorm/target
+  $ java -cp ./CnPiAwareStorm-0.0.20170325.1755-jar-with-dependencies.jar com.cn.piaware.storm.topology.SimpleStormTopology
+```
 
 ### PiAware Topology
 ```

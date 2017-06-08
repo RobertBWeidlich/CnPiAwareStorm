@@ -34,9 +34,10 @@ public class SimpleStormTopology {
         LocalCluster cluster = new LocalCluster();
         cluster.submitTopology("simple-topology", config, topology);
 
-        //Utils.sleep(60000); // run for 1 minute
+        Utils.sleep(60000); // run for 1 minute
+        //Utils.sleep(180000); // run for 3 minutes
         //Utils.sleep(300000); // run for 5 minutes
-        Utils.sleep(600000); // run for 10 minutes
+        //Utils.sleep(600000); // run for 10 minutes
         cluster.killTopology("simple-topology");
         cluster.shutdown();
     }
