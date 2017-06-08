@@ -53,7 +53,7 @@ To run the SimpleStormTopology topology from the Linux command line:
  |                     |
  +----------+----------+ 
             |
-            | ("piaware-data-out")
+            | ("piaware-json-data")
             |
             v
  +----------+----------+ 
@@ -61,5 +61,9 @@ To run the SimpleStormTopology topology from the Linux command line:
  | PiAwareJsonParser   | id = "piaware-json-parser"
  |                     |
  +----------+----------+ 
+            |
+            | ("time", "flight-data")
+            |
+            v
 
 ```

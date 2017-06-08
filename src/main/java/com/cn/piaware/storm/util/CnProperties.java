@@ -1,4 +1,4 @@
-package com.cn.piaware.storm.topology;
+package com.cn.piaware.storm.util;
 
 import java.util.Enumeration;
 import java.util.Iterator;
@@ -11,29 +11,39 @@ import org.apache.commons.configuration2.CompositeConfiguration;
 import org.apache.commons.configuration2.PropertiesConfiguration;
 import org.apache.commons.configuration2.SystemConfiguration;
 
-public class PiAwareTopology {
-    public static void main(String[] args) {
+
+public class CnProperties {
+    static void properties() {
+
+        int[] ii = {1, 2, 3};
+        for (int i : ii) {
+            System.out.println(i);
+        }
+
 
         /*
          * 1. print properties in alphbetical order
          */
         Properties props = System.getProperties();
-        Enumeration<Object> ek = props.keys();
-        Collections.sort(ek);
+        //Enumeration<String> ek = props.keys();
+        //Collections.sort(ek);
 
+        /*
         while (ek.hasMoreElements()) {
-            String key = ek.nextElement().toString();
+            //String key = ek.nextElement().toString();
+            String key = ek.nextElement();
             String val = props.get(key).toString();
             System.out.println(key + "=" + val);
         }
+        */
 
-        List<Object> ll = new ArrayList(ek);
+        //List<Object> ll = new ArrayList(ek);
 
 
         /*
          * 2. read properties file from correct place in Maven File Directory Structure
          */
-        CompositeConfiguration config = new CompositeConfiguration();
+        //CompositeConfiguration config = new CompositeConfiguration();
 
         //config.addConfiguration(new PropertiesConfiguration("piaware.properties"));
         //config.addConfiguration(new PropertiesConfiguration(""));
@@ -49,6 +59,11 @@ public class PiAwareTopology {
             System.out.println(key + " = " + val);
         }
         */
+
+
+
+
+
 
     }
 }
