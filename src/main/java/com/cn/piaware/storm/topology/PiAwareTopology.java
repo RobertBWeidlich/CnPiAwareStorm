@@ -19,7 +19,7 @@ public class PiAwareTopology {
          */
         Properties props = System.getProperties();
         Enumeration<Object> ek = props.keys();
-        Collections.sort(ek);
+        //Collections.sort(ek);
 
         while (ek.hasMoreElements()) {
             String key = ek.nextElement().toString();
@@ -27,7 +27,7 @@ public class PiAwareTopology {
             System.out.println(key + "=" + val);
         }
 
-        List<Object> ll = new ArrayList(ek);
+        //List<Object> ll = new ArrayList(ek);
 
 
         /*
