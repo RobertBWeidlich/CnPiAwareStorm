@@ -22,3 +22,7 @@ target/
 
 # vim backup files
 .swp
+
+# Storm artifacts
+logs/
+

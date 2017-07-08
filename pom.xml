@@ -4,7 +4,7 @@
     <groupId>com.cn.piaware.storm</groupId>
     <artifactId>CnPiAwareStorm</artifactId>
     <packaging>jar</packaging>
-    <version>0.0.0.20170708.1212</version>
+    <version>0.0.20170708.1245</version>
     <name>CnPiAwareStorm</name>
     <url>http://maven.apache.org</url>
 
