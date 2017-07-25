@@ -32,10 +32,10 @@ public class OneToTenSpout  extends BaseRichSpout {
         this.outputCollector = outputCollector;
     }
 
-    @Override
     /**
      * pause 10 seconds between iterations, 1 second between each output
      */
+    @Override
     public void nextTuple() {
         ++loopi;
         long count = 0;
